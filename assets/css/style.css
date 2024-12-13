@@ -1,5 +1,5 @@
 /* Import Lato and Oswald Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -10,17 +10,17 @@
 
 /* General Styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #3a3a3a;
-    font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
 }
 
 /* Header */
 header {
-  background-color: #ffffff ;
+  background-color: #ffffff;
   padding: 0 1rem;
   position: fixed;
   z-index: 99;
@@ -37,10 +37,10 @@ header a {
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 #menu {
@@ -54,24 +54,24 @@ h1 {
 }
 
 .active {
-  border-bottom: 1px solid #252525 ;
+  border-bottom: 1px solid #252525;
 }
 
 /* Navbar styles with dropdown toggle */
 
-nav{
+nav {
   position: absolute;
   background-color: #ffffff;
   width: 100%;
   left: 0;
   padding: 0 1rem;
   box-shadow: 0 2px 2px #3a3a3a;
-  display:none;
+  display: none;
   top: 100%;
-  }
+}
 
 /* Nav-toggle */
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
@@ -98,7 +98,7 @@ footer {
 
 /* Media query: tablets and larger (768px and up) */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   /* Header */
   nav {
     display: block;
@@ -125,11 +125,19 @@ footer {
     line-height: 75px;
     margin: 0 0.5rem;
   }
-  
+
   /* Main Content */
 
   main {
     /* Push main content down */
     margin-top: 79px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Make menu items have hover effect */
+
+  #menu a:hover {
+    border-bottom: 1px solid #252525;
   }
 }
