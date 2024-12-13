@@ -75,10 +75,6 @@ nav{
   display: block;
 }
 
-#nav-toggle:checked~header {
-  box-shadow: unset;
-}
-
 #nav-toggle {
   display: none;
 }
