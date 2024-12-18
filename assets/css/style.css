@@ -117,7 +117,8 @@ main {
   padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text > h2,
+#cover-text > h3 {
   color: #ffffff;
 }
 
@@ -139,8 +140,9 @@ main {
   margin: 5px 0;
 }
 
-#benefits-physical p, #benefits-mental p {
-  padding:0 20px;
+#benefits-physical p,
+#benefits-mental p {
+  padding: 0 20px;
   line-height: 20px;
   margin-bottom: 20px;
 }
@@ -212,6 +214,15 @@ main {
   color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
 /* Media query: tablets and larger (768px and up) */
 
 @media screen and (min-width: 768px) {
@@ -257,21 +268,31 @@ main {
 
   /* Reasons Section */
 
-  #benefits-physical, #benefits-mental {
+  #benefits-physical,
+  #benefits-mental {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  #benefits-physical > div, #benefits-mental> div {
+  #benefits-physical > div,
+  #benefits-mental > div {
     width: 75%;
   }
 
-  #benefits-mental> div {
+  #benefits-mental > div {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery */
+
+  #photos {
+    column-count: 3;
+  }
 }
+
+/* Larger Devices */
 
 @media screen and (min-width: 992px) {
   /* Make menu items have hover effect */
@@ -279,10 +300,13 @@ main {
   #menu a:hover {
     border-bottom: 1px solid #252525;
   }
+
+  #photos {
+    column-count: 4;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  
   /* Reasons Section */
   #benefits {
     display: flex;
@@ -298,9 +322,9 @@ main {
   }
 
   #benefits-mental {
-    order:1;
+    order: 1;
   }
-  
+
   #benefits-mental > div {
     align-self: flex-start;
   }
@@ -308,5 +332,4 @@ main {
   #benefits-physical > div {
     align-self: flex-end;
   }
-
 }
